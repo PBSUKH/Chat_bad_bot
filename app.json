@@ -1,0 +1,84 @@
+{
+  "name": "github-heroku-bot",
+  "description": "Telegram Bot using Pyrogram",
+  "repository": "https://github.com/PBSUKH/Bad_Chat_bot",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true,
+      "value": "29908998"
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash",
+      "required": true,
+      "value": "3a0d920a6370b97671ea838d92dc559c"
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "required": true,
+      "value": "6458392783:AAGoSN-rmcvF9LJ2T60QMU6-DbT2nhPUnHA"
+      },
+    "BOT_NAME": {
+      "description": "Your Bot name",
+      "required": true,
+      "value": "◄⏤͟͟͞🐼⃝⃪ ⃪ͥ͢ ᷟ ̶͢ ̶ͨ ̶ͧ ̶ͭ ̶ͤ🦋⃟⃟⃟⃟💞 𓆩🆂нιzυ 𓆪 💞𝆺𝅥⃝🥀 𝆺𝅥⃝"
+    },
+    "BOT_USERNAME": {
+      "description": "Your Bot Username",
+      "required": true,
+      "value": "ShizuRank_Bot"
+      
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID (Owner)",
+      "required": true,
+      "value": "6566179661"
+    },
+    "SUDO_USER": {
+      "description": "Your Telegram SUDO ID (Sudo)",
+      "required": true,
+      "value": "6566179661"
+      },
+    "MONGO_DB": {
+      "description": "Your Telegram SUDO ID (Mongo_db)",
+      "required": true,
+      "value": "mongodb+srv://Badmunda_13:badmunda50@cluster0.9oyzqux.mongodb.net/?retryWrites=true&w=majority"
+      },
+    "SUPPORT_GRP": {
+      "description": "Your Telegram SUPPORT_GRP (Support_grp)",
+      "required": true,
+      "value": "ll_THE_BAD_BOT_ll"
+      },
+    "UPDATE_CHNL": {
+      "description": "Your Telegram UPDATE_CHNL (Update_chnl)",
+      "required": true,
+      "value": "ll_THE_BAD_BOT_ll"
+      },
+    "DEEP_API": {
+      "description": "Your DEEP API https://deepai.org/",
+      "required": true,
+      "value": "f03e1515-27f8-4976-b04b-bf72803f3a99"
+    },
+    "LOGGER_ID": {
+      "description": "Your Logger Chat ID",
+      "required": true,
+      "value": "-1002056907061"
+    },
+    "DAXX_API": {
+      "description": "NEED DAXX_API GO TO @IAM_DAXXBOT",
+      "required": true,
+      "value": "BAD_APIk8JL2mBIu?z(d8XAd2Ip6R;+@1Wljc"
+    },
+    "GPT_API": {
+      "description": "Your GPT API Key open ai",
+      "required": true,
+      "value": "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"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "stack": "heroku-22"
+}
