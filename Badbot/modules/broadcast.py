@@ -2,7 +2,7 @@ import asyncio
 from config import OWNER_ID
 from pyrogram import *
 from pyrogram.types import *
-from Badbot import Badbot
+from Badbot import app
 from Badbot.core.mongo import *
 
 
