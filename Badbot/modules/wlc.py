@@ -156,7 +156,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 LOGGER.error(e)
         try:
             welcomeimg = welcomepic(
-                pic, user.first_name, member.chat.title, user.id, user.username
+                pic, user.first_name, member.chat.title, user.id
             )
             button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
             add_button_text = "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏"
@@ -171,7 +171,6 @@ async def greet_new_member(_, member: ChatMemberUpdated):
 ▰▰▰▰▰▰▰▰▰▰▰▰▰
 **➻ ɴᴀᴍᴇ »** {user.mention}
 **➻ ɪᴅ »** `{user.id}`
-**➻ ᴜ_ɴᴀᴍᴇ »** @{user.username}
 **➻ ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs »** {count}
 ▰▰▰▰▰▰▰▰▰▰▰▰▰
 
