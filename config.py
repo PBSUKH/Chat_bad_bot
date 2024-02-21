@@ -28,6 +28,10 @@ SUDO_USER = list(int(i) for i in os.environ.get("SUDO_USER", "6898413162").split
 # ------------------------------------------------
 MONGO_DB = os.environ.get("MONGO_DB")
 # ------------------------------------------------
+MONGO_URL = getenv("MONGO_URL", "")
+# ------------------------------------------------
+SESSION_STRING = getenv("SESSION_STRING", "")
+# ------------------------------------------------
 SUPPORT_GRP = getenv("SUPPORT_GRP", "ll_THE_BAD_BOT_ll")
 # ------------------------------------------------
 UPDATE_CHNL = getenv("UPDATE_CHNL", "ll_BAD_MUNDA_WORLD_ll")
