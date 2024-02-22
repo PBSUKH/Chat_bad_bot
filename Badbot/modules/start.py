@@ -57,7 +57,10 @@ help_txt = """**
 
 # ------------------------------------------------------------------------------- #
 
-chizuru_buttons = [              
+chizuru_buttons = [
+                        [
+                    InlineKeyboardButton("rank", callback_data="rank_")
+                        ],
                 [
                     InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),   
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
@@ -154,7 +157,16 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-        
+      elif query.data=="rank_":        
+        reply_markup = InlineKeyboardMarkup(back_buttons)
+        try:
+            await query.edit_message_text(
+                rank_txt,
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+                
     elif query.data=="music_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
