@@ -1,5 +1,5 @@
 from pyrogram import filters
-from BadbotBadbot import app, BOT_USERNAME
+from Badbot import app, BOT_USERNAME
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from Badbot.core.strings import (music_txt, ai_txt, bass_txt, youtube_txt, 
 misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt)
