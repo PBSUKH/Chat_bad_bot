@@ -40,7 +40,6 @@ button = InlineKeyboardMarkup([
 # ------------------------------------------------------------------------------- #
 button1 = InlineKeyboardMarkup([
         [
-        [
             InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_"),    
         ]
 ])
