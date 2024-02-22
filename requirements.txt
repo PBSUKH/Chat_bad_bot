@@ -25,3 +25,4 @@ pyrogram
 #music
 py-tgcalls==1.1.2 
 ffmpeg-python
+numpy
