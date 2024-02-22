@@ -26,5 +26,3 @@ pyrogram
 py-tgcalls==1.1.2 
 ffmpeg-python
 numpy
-#chatbot...
-Abg==2.3.1
