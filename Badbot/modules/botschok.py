@@ -7,7 +7,7 @@ BOT_LIST = ["ShizuRank_Bot"]
 
 
 
-@Chizuru.on_message(filters.command("botschk") & filters.user(SUDO_USERS))
+@app.on_message(filters.command("botschk") & filters.user(SUDO_USER))
 async def bots_chk(chizuru, message):
     msg = await message.reply_photo(photo="https://telegra.ph/file/48578068b7574bb25a529.jpg", caption="**ᴄʜᴇᴄᴋɪɴɢ ʙᴏᴛs sᴛᴀᴛs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ...**")
     response = "**ʙᴏᴛs sᴛᴀᴛᴜs ᴅᴇᴀᴅ ᴏʀ ᴀʟɪᴠᴇ ᴄʜᴇᴄᴋᴇʀ**\n\n"
@@ -32,7 +32,7 @@ async def bots_chk(chizuru, message):
 
 
 
-@Chizuru.on_message(filters.command("addbot") & filters.user(SUDO_USERS))
+@app.on_message(filters.command("addbot") & filters.user(SUDO_USER))
 async def add_bot(chizuru, message):
     bruh = message.text.split(maxsplit=1)[1]
     data = bruh.split(" ")
@@ -50,7 +50,7 @@ async def add_bot(chizuru, message):
 
 
 
-@Chizuru.on_message(filters.command("rmbot") & filters.user(SUDO_USERS))
+@app.on_message(filters.command("rmbot") & filters.user(SUDO_USER))
 async def remove_bot(chizuru, message):
     bruh = message.text.split(maxsplit=1)[1]
     data = bruh.split(" ")
