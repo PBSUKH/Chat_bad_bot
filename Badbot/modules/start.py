@@ -37,8 +37,13 @@ button = InlineKeyboardMarkup([
         ]
 ])
 
-
-
+# ------------------------------------------------------------------------------- #
+button1 = InlineKeyboardMarkup([
+        [
+        [
+            InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_"),    
+        ]
+])
 # ------------------------------------------------------------------------------- #
 
 help_txt = """**
@@ -113,7 +118,7 @@ async def cb_handler(client, query):
 @app.on_message(filters.command("help"))
 async def start(_,message):
   await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
-                            caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button)
+                            caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button1)
 
 
 
