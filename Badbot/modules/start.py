@@ -28,14 +28,15 @@ HELP_TEXT = """
 
 # ------------------------------------------------------------------------------- #
 
-button = [
+button = InlineKeyboardMarkup([
         [
-                InlineKeyboardButton("•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+            InlineKeyboardButton("•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),    
         ],
-        [
-         InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
-         InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")    
-        ]]
+         [               
+          InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
+            InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_"),    
+        ]
+])
 
 # ------------------------------------------------------------------------------- #
 button1 = InlineKeyboardMarkup([
@@ -53,10 +54,7 @@ help_txt = """**
 
 # ------------------------------------------------------------------------------- #
 
-chizuru_buttons = [
-                        [
-                    InlineKeyboardButton("rank", callback_data="rank_")
-                        ],
+chizuru_buttons = [              
                 [
                     InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),   
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
@@ -153,8 +151,7 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-
-                
+        
     elif query.data=="music_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
@@ -271,4 +268,3 @@ async def cb_handler(client, query):
             await query.message.reply_to_message.delete()
         except:
             pass
-
