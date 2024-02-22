@@ -60,6 +60,11 @@ chizuru_buttons = [
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
                     InlineKeyboardButton("ʙᴀss", callback_data="bass_")
                 ],
+        [
+                    InlineKeyboardButton("rank", callback_data="rank_"),   
+                    InlineKeyboardButton("bqd", callback_data="ai_"),
+                    InlineKeyboardButton("ʙᴀs", callback_data="bass_")
+                ],
                 [
                     InlineKeyboardButton("ʏᴏᴜᴛᴜʙᴇ", callback_data="youtube_"),   
                     InlineKeyboardButton("ᴍɪsᴄ", callback_data="misc_"),
