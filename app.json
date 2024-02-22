@@ -39,6 +39,16 @@
       "required": true,
       "value": "6566179661"
       },
+      "SESSION_STRING": {
+       "description": "A Pyrogram v2 String Session.",
+       "value": "",
+       "required": true
+        },
+      "MONGO_URL": {
+      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "value": "mongodb+srv://Badmunda_13:badmunda50@cluster0.9oyzqux.mongodb.net/?retryWrites=true&w=majority",
+       "required": true
+        },
     "MONGO_DB": {
       "description": "Your Telegram SUDO ID (Mongo_db)",
       "required": true,
