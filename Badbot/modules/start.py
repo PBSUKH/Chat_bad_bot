@@ -200,17 +200,7 @@ async def cb_handler(client, query):
             pass
                 
 
- elif query.data=="rank_":        
-        reply_markup = InlineKeyboardMarkup(back_buttons)
-        try:
-            await query.edit_message_text(
-                rank_txt,
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass        
-
-
+ 
     elif query.data=="checker_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
