@@ -34,7 +34,7 @@ async def get_administrators(chat) -> List[int]:
 
 def authorized_users(func: Callable) -> Callable:
     async def decorator(client, message):
-        if message.from_user.id in SUDO_USERS:
+        if message.from_user.id in SUDO_USER:
             return await func(client, message)
 
         administrators = await get_administrators(message.chat)
