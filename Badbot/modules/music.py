@@ -42,7 +42,7 @@ useer = "NaN"
 
 # --------------------------------------------------------------------------------------------------------- #
 
-@app.on_message(filters.command(["play"], prefixes=["/","."]))
+@app.on_message(filters.command(["splay"], prefixes=["/","."]))
 async def play(_, message):
     global que
     global useer    
@@ -154,7 +154,7 @@ async def play(_, message):
 # --------------------------------------------------------------------------------------------------------- #
 
 
-@app.on_message(filters.command(["vplay"], prefixes=["/","."]))
+@app.on_message(filters.command(["svplay"], prefixes=["/","."]))
 async def vplay(_, message):
     global que
     global useer    
@@ -266,7 +266,7 @@ async def vplay(_, message):
 
 # --------------------------------------------------------------------------------------------------------- #
 
-@app.on_message(filters.command(["skip", "next"], prefixes=["/", "!"]))
+@app.on_message(filters.command(["sskip", "next"], prefixes=["/", "!"]))
 async def skip(_, message: Message):
     ACTV_CALLS = []
     print(ACTV_CALLS)
