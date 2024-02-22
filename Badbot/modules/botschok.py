@@ -1,7 +1,7 @@
 import asyncio
 from pyrogram import filters
 from Badbot import app, userbot
-from config import SUDO_USERS
+from config import SUDO_USER
 
 BOT_LIST = ["ShizuRank_Bot"]
 
