@@ -86,10 +86,10 @@ back_buttons  = [[
 
 
 
-@app.on_message(filters.command("start"))
+@app.on_message(filters.command("mstart"))
 async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/3d80acd2bbc6b6abe5b87.jpg",
-                            caption=START_TEXT.format(message.from_user.mention),reply_markup=button)
+  await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
+                            caption=start_txt.format(message.from_user.mention),reply_markup=button)
 
 
 
@@ -115,32 +115,7 @@ async def cb_handler(client, query):
 
 
 # ------------------------------------------------------------------------------- #
-@app.on_message(filters.command("help"))
-async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
-                            caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button1)
-
-
-
-@app.on_callback_query()
-async def cb_handler(client, query):
-    if query.data=="home_":
-        buttons = [
-            [
-                                InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")
-            ]    
-        ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        try:
-            await query.edit_message_text(
-                start_txt.format(query.from_user.mention),
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
-
-
-# -------------------------------------------------#
+        
     elif query.data=="help_":        
         reply_markup = InlineKeyboardMarkup(chizuru_buttons)
         try:
@@ -197,11 +172,11 @@ async def cb_handler(client, query):
 
         
         
-    elif query.data=="misc_":        
+    elif query.data=="rank_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
             await query.edit_message_text(
-                misc_txt,
+                rank_txt,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
@@ -268,3 +243,5 @@ async def cb_handler(client, query):
             await query.message.reply_to_message.delete()
         except:
             pass
+
+
