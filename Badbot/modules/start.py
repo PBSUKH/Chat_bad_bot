@@ -2,8 +2,10 @@ from pyrogram import filters
 from Badbot import app, BOT_USERNAME
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from Badbot.core.strings import (music_txt, ai_txt, bass_txt, youtube_txt, 
-misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt, bad_txt)
+misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt)
 
+
+# ------------------------------------------------------------------------------- #
 
 # ------------------------------------------------------------------------------- #
 
@@ -25,6 +27,7 @@ HELP_TEXT = """
 ❤️ 𝗔𝗜 𝗕𝗢𝗧 🤖
 
 ━━━━━━━━━━━━━━━━━━━━━━━━"""
+
 
 # ------------------------------------------------------------------------------- #
 
@@ -53,7 +56,7 @@ help_txt = """**
 
 # ------------------------------------------------------------------------------- #
 
-chizuru_buttons = [
+chizuru_buttons = [              
                 [
                     InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),   
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
@@ -68,9 +71,6 @@ chizuru_buttons = [
                     InlineKeyboardButton("ᴄʜᴇᴄᴋᴇʀ", callback_data="checker_"),   
                     InlineKeyboardButton("ᴅᴇᴠs", callback_data="devs_"),
                     InlineKeyboardButton("ɪɴsᴛᴀɢʀᴀᴍ", callback_data="instagram_")
-                ],
-                [
-                        InlineKeyboardButton("rank", callback_data="bad_"),
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home_"),
@@ -91,7 +91,7 @@ back_buttons  = [[
 @app.on_message(filters.command("start"))
 async def start(_,message):
   await message.reply_photo("https://telegra.ph/file/3d80acd2bbc6b6abe5b87.jpg",
-                            caption=START_TEXT.format(message.from_user.mention),reply_markup=button)
+                            caption=start_txt.format(message.from_user.mention),reply_markup=button)
 
 
 
@@ -117,8 +117,7 @@ async def cb_handler(client, query):
 
 
 # ------------------------------------------------------------------------------- #
-@app.on_message(filters.command("help"))
-async def start(_,message):
+ def start(_,message):
   await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
                             caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button1)
 
@@ -140,9 +139,8 @@ async def cb_handler(client, query):
             )
         except MessageNotModified:
             pass
-
-
-# -------------------------------------------------#
+# ------------------------------------------------------------------------------- #
+        
     elif query.data=="help_":        
         reply_markup = InlineKeyboardMarkup(chizuru_buttons)
         try:
@@ -153,7 +151,7 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-                
+        
     elif query.data=="music_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
@@ -163,6 +161,7 @@ async def cb_handler(client, query):
             )
         except MessageNotModified:
             pass
+
 
     elif query.data=="ai_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
@@ -198,11 +197,11 @@ async def cb_handler(client, query):
 
         
         
-    elif query.data=="misc_":        
+    elif query.data=="rank_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
             await query.edit_message_text(
-                misc_txt,
+                rank_txt,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
@@ -254,17 +253,6 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-    
-    elif query.data=="bad_":        
-        reply_markup = InlineKeyboardMarkup(back_buttons)
-        try:
-            await query.edit_message_text(
-                bad_txt,
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
-
         
 # ------------------------------------------------------------------------------- #
 
@@ -280,3 +268,4 @@ async def cb_handler(client, query):
             await query.message.reply_to_message.delete()
         except:
             pass
+
