@@ -79,7 +79,7 @@ instagram_txt = """
 ⦿ `/reels` ➠ `ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs`
 ⦿ `/story` ➠ `ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ sᴛᴏʀʏ`
 """
-rank_txt = """
+bad_txt = """
 **ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ rankbot  ᴄᴏᴍᴍᴀɴᴅs:**
 
 ⦿ `/rankbot 
