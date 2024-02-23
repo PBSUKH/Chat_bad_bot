@@ -2,7 +2,7 @@ from pyrogram import filters
 from Badbot import app, BOT_USERNAME
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from Badbot.core.strings import (music_txt, ai_txt, bass_txt, youtube_txt, 
-misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt)
+misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt, rank_txt)
 
 
 # ------------------------------------------------------------------------------- #
@@ -58,6 +58,9 @@ chizuru_buttons = [
                     InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),   
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
                     InlineKeyboardButton("ʙᴀss", callback_data="bass_")
+                ],
+        [
+                    InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),
                 ],
                 [
                     InlineKeyboardButton("ʏᴏᴜᴛᴜʙᴇ", callback_data="youtube_"),   
