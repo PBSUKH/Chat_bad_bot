@@ -164,17 +164,6 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-        elif query.data=="bad_":        
-        reply_markup = InlineKeyboardMarkup(back_buttons)
-        try:
-            await query.edit_message_text(
-                bad_txt,
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
-
-
     elif query.data=="ai_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
@@ -260,6 +249,17 @@ async def cb_handler(client, query):
         try:
             await query.edit_message_text(
                 instagram_txt,
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+
+    
+    elif query.data=="bad_":        
+        reply_markup = InlineKeyboardMarkup(back_buttons)
+        try:
+            await query.edit_message_text(
+                bad_txt,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
