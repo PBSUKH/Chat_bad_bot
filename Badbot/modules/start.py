@@ -1,4 +1,3 @@
-
 from pyrogram import filters
 from Badbot import app, BOT_USERNAME
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
@@ -8,41 +7,25 @@ misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt)
 
 # ------------------------------------------------------------------------------- #
 
-START_TEXT = """
-❤️ 𝗔𝗜 𝗕𝗢𝗧 🤖
+start_txt = """
+**ʜᴇʟʟᴏ** {} 
 
-**𝐇ᴇʟʟᴏ ⚘
-━━━━━━━━━━━━━━━━━━━━━━━━
-𝐈'ᴍ 𝐘ᴏᴜʀ 𝐅ʀɪᴇɴᴅʟʏ 𝐑ᴀɴᴋɪɴɢ 𝐀ɪ 𝐁ᴏᴛ 💬
-━━━━━━━━━━━━━━━━━━━━━━━━━
-🍃𝐔ʀ 𝐂ᴏᴍᴘᴀɴɪᴏɴ 𝐑ᴀɴᴋɪɴɢ 𝐁ᴏᴛ 𝐘ᴏᴜ 𝐂ᴀɴ 𝐒ʜᴀʀᴇ 𝐎ʀ 𝐓ʜᴏᴜɢʜᴛ 𝐖ɪᴛʜ 𝐌ᴇ 🏆
-━━━━━━━━━━━━━━━━━━━━━━
-𝐀ɴᴅ 𝐎ᴛʜᴇʀ 𝐀ɴʏ 𝐅ᴇᴀᴛᴜʀᴇs ❤️
-━━━━━━━━━━━━━━━━━━━━━━━━━**"""
+**ɪ ᴀᴍ ᴄʜɪᴢᴜʀᴜ, ʏᴏᴜʀ ᴍᴜsɪᴄ ᴠɪʀᴛᴜᴏsᴏ! ɪᴍᴍᴇʀsᴇ ʏᴏᴜʀsᴇʟғ ɪɴ ғʟᴀᴡʟᴇss ʙᴇᴀᴛs ᴡɪᴛʜ ᴢᴇʀᴏ ʟᴀɢ – ɪ'ᴍ ɴᴏᴛ ᴊᴜsᴛ ᴀ ᴍᴜsɪᴄ ʙᴏᴛ; ɪ'ᴍ ᴛʜᴇ sʏᴍᴘʜᴏɴʏ ᴏғ ᴛʜᴇ ғᴜᴛᴜʀᴇ, ᴛᴀɪʟᴏʀᴇᴅ ғᴏʀ ʏᴏᴜʀ ᴍᴜsɪᴄᴀʟ ʙʟɪss.**
+"""
 
 # ------------------------------------------------------------------------------- #
 
-HELP_TEXT = """
-❤️ 𝗔𝗜 𝗕𝗢𝗧 🤖
-
-━━━━━━━━━━━━━━━━━━━━━━━━"""
-
-# ------------------------------------------------------------------------------- #
-
-button = [
+button = InlineKeyboardMarkup([
         [
-                InlineKeyboardButton("•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+            InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),    
         ],
-        [
-         InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
-         InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")    
-        ]]
-# ------------------------------------------------------------------------------- #
-button1 = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_"),    
         ]
 ])
+
+
+
 # ------------------------------------------------------------------------------- #
 
 help_txt = """**
@@ -53,7 +36,7 @@ help_txt = """**
 
 # ------------------------------------------------------------------------------- #
 
-chizuru_buttons = [
+chizuru_buttons = [              
                 [
                     InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),   
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
@@ -87,12 +70,12 @@ back_buttons  = [[
 
 @app.on_message(filters.command("start"))
 async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/3d80acd2bbc6b6abe5b87.jpg",
-                            caption=START_TEXT.format(message.from_user.mention),reply_markup=button)
+  await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
+                            caption=start_txt.format(message.from_user.mention),reply_markup=button)
 
 
 
-@app.on_callback_query()
+@app.on__callback_query()
 async def cb_handler(client, query):
     if query.data=="home_":
         buttons =  [
@@ -114,32 +97,7 @@ async def cb_handler(client, query):
 
 
 # ------------------------------------------------------------------------------- #
-@app.on_message(filters.command("help"))
-async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
-                            caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button1)
-
-
-
-@app.on_callback_query()
-async def cb_handler(client, query):
-    if query.data=="home_":
-        buttons = [
-            [
-                                InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")
-            ]    
-        ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        try:
-            await query.edit_message_text(
-                start_txt.format(query.from_user.mention),
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
-
-
-# -------------------------------------------------#
+        
     elif query.data=="help_":        
         reply_markup = InlineKeyboardMarkup(chizuru_buttons)
         try:
@@ -149,7 +107,8 @@ async def cb_handler(client, query):
             )
         except MessageNotModified:
             pass
-                
+
+        
     elif query.data=="music_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
@@ -266,3 +225,5 @@ async def cb_handler(client, query):
             await query.message.reply_to_message.delete()
         except:
             pass
+
+                    
