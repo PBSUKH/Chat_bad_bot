@@ -75,15 +75,12 @@ async def start(_,message):
 
 
 
-@app.on__callback_query()
+@app.on_callback_query()
 async def cb_handler(client, query):
     if query.data=="home_":
-        buttons =  [
+        buttons = [
             [
-                InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-            ],
-            [
-                InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")
+                                InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")
             ]    
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -94,6 +91,7 @@ async def cb_handler(client, query):
             )
         except MessageNotModified:
             pass
+                
 
 
 # ------------------------------------------------------------------------------- #
