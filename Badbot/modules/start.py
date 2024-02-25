@@ -131,7 +131,7 @@ async def cb_handler(client, query):
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                start_txt.format(query.from_user.mention),
+                HELP_TEXT.format(query.from_user.mention),
                 reply_markup=reply_markup
             )
         except MessageNotModified:
