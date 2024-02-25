@@ -30,7 +30,7 @@ button = InlineKeyboardMarkup([
         ],
         [
          InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
-         InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")    
+         InlineKeyboardButton("✯ 𝐅ᴇᴀᴛᴜʀᴇs ✯", callback_data="help_")    
         ]])
 
 
@@ -53,7 +53,7 @@ help_txt = """**
 
 chizuru_buttons = [              
                 [
-                    InlineKeyboardButton("ᴍᴜsɪᴄ", callback_data="music_"),   
+                    InlineKeyboardButton("✯ᴍᴜsɪᴄ", callback_data="music_"),   
                     InlineKeyboardButton("ᴀɪ", callback_data="ai_"),
                     InlineKeyboardButton("ʙᴀss", callback_data="bass_")
                 ],
