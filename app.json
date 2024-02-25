@@ -85,14 +85,16 @@
       "value": "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"
     }
   },
-  "buildpacks": [
-    {
-      "url": "heroku/python" 
-    },
-      {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    }
-    
-  ],
+  buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
   "stack": "heroku-22"
 }
