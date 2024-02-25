@@ -48,7 +48,7 @@ chizuru_buttons = [
                     InlineKeyboardButton("✯ ᴡʜɪsᴘᴇʀ ✯", callback_data="whisper__")
                 ],
                [
-                       InlineKeyboardButton("✯sʜɪᴢᴜ ʙᴏᴛ✯", callback_data="spical_")
+                       InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="spical_")
                ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home_"),
