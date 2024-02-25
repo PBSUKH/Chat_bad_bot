@@ -6,8 +6,8 @@ misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt, spical_txt)
 
 
 # ------------------------------------------------------------------------------- #
-start_txt = """*
-❤️ ʜᴇʟᴘ ᴍᴇɴᴜ sʜɪᴢᴜ ʙᴏᴛ 🤖*"""
+start_txt = """
+❤️ ʜᴇʟᴘ ᴍᴇɴᴜ sʜɪᴢᴜ ʙᴏᴛ 🤖"""
 # ------------------------------------------------------------------------------- #
 
 button = InlineKeyboardMarkup([
@@ -18,8 +18,8 @@ button = InlineKeyboardMarkup([
 
 
 
-help_txt = """*
-❤️ ʜᴇʟᴘ ᴍᴇɴᴜ sʜɪᴢᴜ ʙᴏᴛ 🤖*
+help_txt = """
+❤️ ʜᴇʟᴘ ᴍᴇɴᴜ sʜɪᴢᴜ ʙᴏᴛ 🤖
 """
 
 
@@ -63,7 +63,7 @@ back_buttons  = [[
 
 @app.on_message(filters.command("help"))
 async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/ad002f38c3f5584b049f8.jpg",
+  await message.reply_photo("https://telegra.ph/file/7cf80625df2b0612a2b46.jpg",
                             caption=start_txt.format(message.from_user.mention),reply_markup=button)
 
 
