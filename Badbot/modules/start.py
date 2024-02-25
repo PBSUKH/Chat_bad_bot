@@ -30,7 +30,7 @@ button = InlineKeyboardMarkup([
         ],
         [
          InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
-         InlineKeyboardButton("✯ 𝐅ᴇᴀᴛᴜʀᴇs ✯", callback_data="help_")    
+         InlineKeyboardButton("↯ ᴄᴏᴍᴍᴀɴᴅs ↯", callback_data="help_")    
         ]])
 
 
