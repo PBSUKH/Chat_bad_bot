@@ -2,7 +2,7 @@ from pyrogram import filters
 from Badbot import app, BOT_USERNAME
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from Badbot.core.strings import (music_txt, ai_txt, bass_txt, youtube_txt, 
-misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt)
+misc_txt, broadcast_txt, checker_txt, devs_txt, instagram_txt, spical_txt)
 
 
 # ------------------------------------------------------------------------------- #
@@ -53,7 +53,7 @@ chizuru_buttons = [
                     InlineKeyboardButton("ɪɴsᴛᴀɢʀᴀᴍ", callback_data="instagram_")
                 ],
                [
-                       InlineKeyboardButton("bas", callback_data="sukh_")
+                       InlineKeyboardButton("bas", callback_data="spical_")
                ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home_"),
@@ -213,11 +213,11 @@ async def cb_handler(client, query):
 
         
 
-    elif query.data=="sukh_":        
+    elif query.data=="spical_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
             await query.edit_message_text(
-                sukh_txt,
+                spical_txt,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
