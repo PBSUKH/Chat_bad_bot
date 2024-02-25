@@ -98,7 +98,7 @@ spical_txt = """
 """
 
 
-whisper_txt = """
+bad_txt = """
 **ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ Whisper ᴄᴏᴍᴍᴀɴᴅs:**
 
 ⦿ `@ShizuRank_Bot` ➠ ` ` ᴡʜɪꜱᴘᴇʀ ᴀɴʏ ᴘᴇʀsᴏɴᴀʟ ʜɪᴅᴇ / ʟᴏᴄᴋ ᴍꜱɢ
