@@ -208,9 +208,7 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-        
-
-        elif query.data=="spical_":        
+         elif query.data=="spical_":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
             await query.edit_message_text(
