@@ -113,29 +113,7 @@ async def cb_handler(client, query):
 
 
 # ------------------------------------------------------------------------------- #
-@app.on_message(filters.command("help"))
-async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/b13e25bef0c10ecfd4206.jpg",
-                            caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button1)
 
-
-
-@app.on_callback_query()
-async def cb_handler(client, query):
-    if query.data=="home_":
-        buttons = [
-            [
-                                InlineKeyboardButton("✯ 𝐇ᴇʟᴘ ✯", callback_data="help_")
-            ]    
-        ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        try:
-            await query.edit_message_text(
-                HELP_TEXT.format(query.from_user.mention),
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
 
 # ------------------------------------------------------------------------------- #
     elif query.data=="help_":        
