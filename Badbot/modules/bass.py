@@ -45,7 +45,7 @@ def apply_bass_boost(audio_path):
     return boosted_audio_path
 
 
-@app.on_message(filters.command("loudly"))
+@app.on_message(filters.command("loudly") & filters.reply)
 async def download_and_enhance_audio(client, message):
     try:
         reply_message = message.reply_to_message
@@ -69,8 +69,7 @@ async def download_and_enhance_audio(client, message):
 
 
 
-
-@app.on_message(filters.command("mono"))
+@app.on_message(filters.command("mono") & filters.reply)
 async def split_stereo_and_send_audio(client, message):
     try:
         reply_message = message.reply_to_message
