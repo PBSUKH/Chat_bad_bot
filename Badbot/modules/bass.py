@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pydub import AudioSegment
 import os
+import pydub
 from Badbot import app
 
 
