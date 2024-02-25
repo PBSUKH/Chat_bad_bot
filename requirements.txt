@@ -23,7 +23,6 @@ gpytranslate
 pymongo
 pyrogram
 #music
-pydub
 py-tgcalls==1.1.2 
 ffmpeg-python
 numpy
