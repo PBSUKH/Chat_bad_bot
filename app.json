@@ -41,7 +41,7 @@
       },
       "SESSION_STRING": {
        "description": "A Pyrogram v2 String Session.",
-       "value": "",
+       "value": "BQCGnlbeSIyJmLjZK7wIQ8O89pcy9mOSAFU3_FL0JFcip2T79yrzGAr40VTFnAcm6pkzx7TnX6HW0yz5feA792tqfnQ5yJU0f9GUb5GDXp4FHEEBTaI1q_OuyHhJFv0pfxky2c6yL676XtLEf2orjNkS-zSenMCMpXLMb0YCdmxdawyMNPMTjrjWSzZklt7lUWPIqTRzGef39b10EvsVANEnvBzooNUvNzvme9MkzacuWtgl3Klmah7JgA32r08lrSo9BtWoGdy76noIVk3d0VUQRyaVvbAG_NPVkMSgBwJ9pxEoF5WOUXe-a2Q7aekHKZ0OQbNL4pQo7yQpaJKwGDrcAAAAAZ3dBIAA",
        "required": true
         },
       "MONGO_URL": {
@@ -72,7 +72,7 @@
     "LOGGER_ID": {
       "description": "Your Logger Chat ID",
       "required": true,
-      "value": "-1002056907061"
+      "value": "-1002093247039"
     },
     "DAXX_API": {
       "description": "NEED DAXX_API GO TO @IAM_DAXXBOT",
