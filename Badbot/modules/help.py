@@ -63,7 +63,7 @@ back_buttons  = [[
 
 @app.on_message(filters.command("help"))
 async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/b13e25bef0c10ecfd4206.jpg",
+  await message.reply_photo("https://telegra.ph/file/ad002f38c3f5584b049f8.jpg",
                             caption=start_txt.format(message.from_user.mention),reply_markup=button)
 
 
