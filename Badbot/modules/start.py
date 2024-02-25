@@ -88,7 +88,7 @@ back_buttons  = [[
 
 @app.on_message(filters.command("start"))
 async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
+  await message.reply_photo("https://telegra.ph/file/4e07a3bc3db97aa5d67c1.jpg",
                             caption=start_txt.format(message.from_user.mention),reply_markup=button)
 
 
@@ -115,7 +115,7 @@ async def cb_handler(client, query):
 # ------------------------------------------------------------------------------- #
 @app.on_message(filters.command("help"))
 async def start(_,message):
-  await message.reply_photo("https://telegra.ph/file/fabb39ffadb15ac0697ab.jpg",
+  await message.reply_photo("https://telegra.ph/file/b13e25bef0c10ecfd4206.jpg",
                             caption=HELP_TEXT.format(message.from_user.mention),reply_markup=button1)
 
 
