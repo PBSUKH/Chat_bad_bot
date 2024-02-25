@@ -1,5 +1,5 @@
 {
-  "name": "github-heroku-bot",
+  "name": "miss shizu",
   "description": "Telegram Bot using Pyrogram",
   "repository": "https://github.com/PBSUKH/Bad_Chat_bot",
   "env": {
@@ -89,9 +89,6 @@
     {
       "url": "heroku/python" 
     },
-              {
-              "url": "heroku/nodejs"
-          },
       {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
