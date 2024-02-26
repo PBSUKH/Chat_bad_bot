@@ -45,10 +45,10 @@ chizuru_buttons = [
                 ],
                 [
                     InlineKeyboardButton("✯ ɪɴsᴛᴀɢʀᴀᴍ ✯", callback_data="instagram_"),
-                    InlineKeyboardButton("✯ ᴡʜɪsᴘᴇʀ ✯", callback_data="sukh_")
+                    InlineKeyboardButton("✯ ᴡʜɪsᴘᴇʀ ✯", callback_data="sukh_txt")
                 ],
                [
-                       InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="spical_")
+                       InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="spical_txt")
                ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home_"),
@@ -208,7 +208,27 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-     
+     elif query.data=="sukh_txt":                
+        reply_markup = InlineKeyboardMarkup(back_buttons)
+        try:
+            await query.edit_message_text(
+                sukh_txt,
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+
+            
+    elif query.data=="spical_txt":                
+        reply_markup = InlineKeyboardMarkup(back_buttons)
+        try:
+            await query.edit_message_text(
+                spical_txt,
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+                
          
     
 # ------------------------------------------------------------------------------- #
