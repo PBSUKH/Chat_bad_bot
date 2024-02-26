@@ -63,7 +63,7 @@ async def play(_, message):
         except UserAlreadyParticipant:            
             pass
         except Exception as e:
-            await msg.edit_text(f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/AnonDeveloper)** ")
+            await msg.edit_text(f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [🍹𝆺𝅥⃝🌸 ‌⃪‌ ᷟ🦋ᴹᵁˢᴵᶜ ᥫ᭡𓆩ᴾᴸᴬᵞᴱᴿ𓆪🦋☕︎](https://t.me/II_BAD_MUNDA_II)** ")
                             
     audio = ((message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None)
    
