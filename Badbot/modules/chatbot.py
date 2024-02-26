@@ -11,7 +11,7 @@ from Badbot import MickeyBot
 from Badbot.core import CHATBOT_ON, is_admins
 
 
-@app.on_cmd(filters.command('chatbot'))
+@MickeyBot.on_message(filters.command("chatbot"))
 @adminsOnly("can_delete_messages")
 async def chaton_(_, m: Message):
     await m.reply_text(
