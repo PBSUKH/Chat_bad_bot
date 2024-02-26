@@ -87,7 +87,7 @@ async def play(_, message):
         if len(message.command) < 2:
             await msg.edit_text("💌 **ᴜsᴀɢᴇ: /ᴘʟᴀʏ ɢɪᴠᴇ ᴀ ᴛɪᴛʟᴇ sᴏɴɢ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ.**")
         else:
-            await msg.edit_text("▓▓▓▓▓▓▓▓▓▓▓100%\n\n**⇆ ᴘʀᴏᴄᴇssɪɴɢ...**")
+            await msg.edit_text("**🎧 𝐒ƚαяᴛҽԃ 𝐏ℓαყιɳɠ вαႦყ...**")
                 
         query = message.text.split(None, 1)[1]
             
@@ -199,7 +199,7 @@ async def vplay(_, message):
         if len(message.command) < 2:
             await msg.edit_text("💌 **ᴜsᴀɢᴇ: /vᴘʟᴀʏ ɢɪᴠᴇ ᴀ ᴛɪᴛʟᴇ sᴏɴɢ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ.**")
         else:
-            await msg.edit_text("▓▓▓▓▓▓▓▓▓▓▓100%\n\n**⇆ ᴘʀᴏᴄᴇssɪɴɢ...**")
+            await msg.edit_text("**🎧 𝐒ƚαяᴛҽԃ 𝐏ℓαყιɳɠ вαႦყ...**")
                 
         query = message.text.split(None, 1)[1]
             
