@@ -23,11 +23,12 @@ DURATION_LIMIT = 300
 
 keyboard = InlineKeyboardMarkup([
         [
-                InlineKeyboardButton("•❤️⃤• ılııılılıılıııllıılııılııılıılıılıılıılı. ♡♪🦋•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                InlineKeyboardButton("        ..........⬬⭒💘⭒⬬......... 
+•┈┈┈••┈┈┈••••●••••┈┈┈••┈┈┈•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
-        [InlineKeyboardButton(" ◁ ", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
+        [InlineKeyboardButton(" ◁ ", url=f"https://t.me/ll_BAD_ABOUT_ll"),
          InlineKeyboardButton(" ❚❚ ", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
-         InlineKeyboardButton(" ▷ ", url=f"https://t.me/ll_THE_BAD_BOT_ll")
+         InlineKeyboardButton(" ▷ ", url=f"https://t.me/ll_BAD_MUNDA_WORLD_ll")
         ],
         [
             InlineKeyboardButton(" ᴄʟᴏsᴇ ", callback_data="close_data"),
