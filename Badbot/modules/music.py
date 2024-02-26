@@ -3,6 +3,7 @@ import requests
 from Badbot.core.admin_func import authorized_users, admins as a, set_admins as set
 from Badbot import app, pytgcalls, userbot
 from typing import Callable
+from Badbot import app, BOT_USERNAME
 from pyrogram import filters, Client
 from pyrogram.types import *
 from youtube_search import YoutubeSearch
