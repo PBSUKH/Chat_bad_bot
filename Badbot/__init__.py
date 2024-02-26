@@ -1,6 +1,10 @@
 import asyncio
 import logging
 import time
+from Abg import patch
+from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
+from pyrogram.enums import ParseMode
+import config
 from pytgcalls import PyTgCalls
 from importlib import import_module
 from os import listdir, path
@@ -26,6 +30,18 @@ app = Client(
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
 )
+
+class MickeyBot(Client):
+    def __init__(self):
+        super().__init__(
+            name="MickeyBot",
+            api_id=config.API_ID,
+            api_hash=config.API_HASH,
+            lang_code="en",
+            bot_token=config.BOT_TOKEN,
+            in_memory=True,
+            parse_mode=ParseMode.DEFAULT,
+        )
 
 
 userbot = Client(
