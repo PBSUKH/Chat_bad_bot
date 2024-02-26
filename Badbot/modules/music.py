@@ -25,11 +25,12 @@ keyboard = InlineKeyboardMarkup([
         [
                 InlineKeyboardButton("•❤️⃤• ılııılılıılıııllıılııılııılıılıılıılıılı. ♡♪🦋•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
-        [InlineKeyboardButton("◁", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
+        [InlineKeyboardButton(" ◁ ", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
+         InlineKeyboardButton(" ❚❚ ", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
+         InlineKeyboardButton(" ▷ ", url=f"https://t.me/ll_THE_BAD_BOT_ll")
+        ],
         [
             InlineKeyboardButton(" ᴄʟᴏsᴇ ", callback_data="close_data"),
-            InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
-            InlineKeyboardButton("✯ 𝐒ᴜᴘʀᴏᴛ ✯", url=f"https://t.me/ll_THE_BAD_BOT_ll"),
         ]
 ])
 
