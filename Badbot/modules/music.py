@@ -22,6 +22,9 @@ DURATION_LIMIT = 300
 
 keyboard = InlineKeyboardMarkup([
         [
+                InlineKeyboardButton("•❤️⃤• ılııılılıılıııllıılııılııılıılıılıılıılı. ♡♪🦋•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+        ],
+        [
             InlineKeyboardButton(" ᴄʟᴏsᴇ ", callback_data="close_data"),    
         ]
 ])
