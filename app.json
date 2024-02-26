@@ -1,7 +1,7 @@
 {
   "name": "miss shizu",
   "description": "Telegram Bot using Pyrogram",
-  "repository": "https://github.com/PBSUKH/Bad_Chat_bot",
+  "repository": "https://github.com/PBSUKH/Chat_bad_bot",
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
