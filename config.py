@@ -15,7 +15,10 @@ BOT_NAME = os.environ.get("BOT_NAME")
 BOT_USERNAME = os.environ.get("BOT_USERNAME")
 # ------------------X------------------------------
 OWNER_ID = int(os.environ.get("OWNER_ID"))
+# ------------------X-----------------------------
 # ------------------X------------------------------
+OWNER = int(os.environ.get("OWNER"))
+
 DEEP_API = os.environ.get("DEEP_API")
 # ------------------------------------------------
 LOGGER_ID = int(os.environ.get("LOGGER_ID"))
