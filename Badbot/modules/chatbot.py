@@ -7,7 +7,8 @@ from pyrogram.enums import ChatAction
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import MONGO_URL
-from Badbot import app
+from Badbot import MickeyBot
+from Badbot.core import CHATBOT_ON, is_admins
 
 
 @MickeyBot.on_cmd("chatbot", group_only=True)
@@ -293,4 +294,3 @@ async def chatbot_sticker_pvt(client: Client, message: Message):
                 await message.reply_text(f"{hey}")
             if not Yo == "text":
                 await message.reply_sticker(f"{hey}")
-      
