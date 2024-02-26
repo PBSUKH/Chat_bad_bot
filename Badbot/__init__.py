@@ -31,6 +31,12 @@ app = Client(
     bot_token=BOT_TOKEN,
 )
 
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+LOGGER = logging.getLogger(__name__)
+boot = time.time()
+mongo = MongoCli(config.MONGO_URL)
+db = mongo.Anonymous
+OWNER = config.OWNER_ID
 class MickeyBot(Client):
     def __init__(self):
         super().__init__(
