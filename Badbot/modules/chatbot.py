@@ -1,4 +1,4 @@
-=import random
+import random
 from Abg.chat_status import adminsOnly
 
 from pymongo import MongoClient
