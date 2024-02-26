@@ -45,7 +45,7 @@ chizuru_buttons = [
                 ],
                 [
                     InlineKeyboardButton("✯ ɪɴsᴛᴀɢʀᴀᴍ ✯", callback_data="instagram_"),
-                    InlineKeyboardButton("✯ ᴡʜɪsᴘᴇʀ ✯", callback_data="sukh_txt")
+                    InlineKeyboardButton("✯ ʙᴀᴅ ✯", url=f"https://t.me/ll_BAD_MUNDA_WORLD_ll")
                 ],
                [
                        InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="spical_txt")
