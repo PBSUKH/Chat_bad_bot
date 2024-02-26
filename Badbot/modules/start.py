@@ -73,7 +73,7 @@ chizuru_buttons = [
                     InlineKeyboardButton("✯ ᴡʜɪsᴘᴇʀ ✯", callback_data="sukh_")
                 ],
                [
-                       InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="sk")
+                       InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="sukh_txt")
                ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home_"),
@@ -233,11 +233,11 @@ async def cb_handler(client, query):
         except MessageNotModified:
             pass
 
-     elif query.data=="sk":        
+     elif query.data=="sukh_txt":        
         reply_markup = InlineKeyboardMarkup(back_buttons)
         try:
             await query.edit_message_text(
-                spical_txt,
+                sukh_txt,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
