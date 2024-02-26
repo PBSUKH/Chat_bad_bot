@@ -66,11 +66,11 @@ chizuru_buttons = [
                 ],
                 [
                     InlineKeyboardButton("✯ ᴄʜᴇᴄᴋᴇʀ ✯", callback_data="checker_"),   
-                    InlineKeyboardButton("✯ ʙᴀᴅ ✯", callback_data="devs_")
+                    InlineKeyboardButton("✯ sᴛᴀᴛs ✯", callback_data="devs_")
                 ],
                 [
                     InlineKeyboardButton("✯ ɪɴsᴛᴀɢʀᴀᴍ ✯", callback_data="instagram_"),
-                    InlineKeyboardButton("✯ ᴡʜɪsᴘᴇʀ ✯", callback_data="sukh_txt")
+                    InlineKeyboardButton("✯ ʙᴀᴅ ✯", url=f"https://t.me/ll_BAD_MUNDA_WORLD_ll")
                 ],
                [
                        InlineKeyboardButton("✯ sʜɪᴢᴜ ʙᴏᴛ ✯", callback_data="spical_txt")
