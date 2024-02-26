@@ -51,13 +51,13 @@ async def today_(_, message):
         sorted_users_data = sorted(users_data, key=lambda x: x[1], reverse=True)[:10]
         
         if sorted_users_data:
-            response = "**📈 LEADERBOARD TODAY**\n"
+            response = "**📈 LEADERBOARD TODAY**\n\n"
             for idx, (user_id, total_messages) in enumerate(sorted_users_data, start=1):
                 try:
                     user_name = (await app.get_users(user_id)).first_name
                 except:
                     user_name = "Unknown"
-                user_info = f"**{idx}**. {user_name} • {total_messages}\n"
+                user_info = f"**{idx}**✯ {user_name} ⇏ {total_messages}\n"
                 response += user_info
             button = InlineKeyboardMarkup(
                 [[    
@@ -75,7 +75,7 @@ async def today_(_, message):
 async def ranking(_, message):
     top_members = collection.find().sort("total_messages", -1).limit(10)
     
-    response = "**📈 LEADERBOARD**\n"
+    response = "**📈 LEADERBOARD**\n\n"
     for idx, member in enumerate(top_members, start=1):
         user_id = member["_id"]
         total_messages = member["total_messages"]
@@ -84,7 +84,7 @@ async def ranking(_, message):
         except:
             user_name = "Unknown"
         
-        user_info = f"**{idx}**. {user_name} • {total_messages}\n"
+        user_info = f"**{idx}**✯ {user_name} ⇏ {total_messages}\n"
         response += user_info 
     button = InlineKeyboardMarkup(
             [[    
@@ -96,7 +96,7 @@ async def ranking(_, message):
 
 # -------------------- regex -------------------- # 
 
-@app.on_callback_query(filters.regex("today"))
+@app.on_callback_query(filters.regex("ranking"))
 async def today_rank(_, query):
     chat_id = query.message.chat.id
     if chat_id in today:
@@ -104,13 +104,13 @@ async def today_rank(_, query):
         sorted_users_data = sorted(users_data, key=lambda x: x[1], reverse=True)[:10]
         
         if sorted_users_data:
-            response = "**📈 LEADERBOARD TODAY**\n"
+            response = "**📈 LEADERBOARD TODAY**\n\n"
             for idx, (user_id, total_messages) in enumerate(sorted_users_data, start=1):
                 try:
                     user_name = (await app.get_users(user_id)).first_name
                 except:
                     user_name = "Unknown"
-                user_info = f"**{idx}**. {user_name} • {total_messages}\n"
+                user_info = f"**{idx}**✯ {user_name} ⇏ {total_messages}\n"
                 response += user_info
             button = InlineKeyboardMarkup(
                 [[    
@@ -128,7 +128,7 @@ async def today_rank(_, query):
 async def overall_rank(_, query):
     top_members = collection.find().sort("total_messages", -1).limit(10)
     
-    response = "**📈 LEADERBOARD**\n"
+    response = "**📈 LEADERBOARD**\n\n"
     for idx, member in enumerate(top_members, start=1):
         user_id = member["_id"]
         total_messages = member["total_messages"]
@@ -137,7 +137,7 @@ async def overall_rank(_, query):
         except:
             user_name = "Unknown"
         
-        user_info = f"**{idx}**. {user_name} • {total_messages}\n"
+        user_info = f"**{idx}**✯ {user_name} ⇏ {total_messages}\n"
         response += user_info 
     button = InlineKeyboardMarkup(
             [[    
